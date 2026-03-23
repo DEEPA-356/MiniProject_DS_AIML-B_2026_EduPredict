@@ -1,0 +1,4 @@
+,CV Accuracy,Test Accuracy,F1-Score
+Random Forest,0.915,0.93,0.929207729468599
+Logistic Regression,0.95,0.94,0.9388064516129033
+Decision Tree,0.8775000000000001,0.84,0.8413874185507317
