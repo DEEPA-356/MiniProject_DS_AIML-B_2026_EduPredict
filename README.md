@@ -48,10 +48,10 @@ EduPredict/
 ```
 
 ## Team Members
-- **Team Leader**: [Your Name]
-- **Member 2**: [Name]
-- **Member 3**: [Name]
-- **Member 4**: [Name]
+- **Team Leader**: [Adhi0007]
+- **Member 2**: [Student Name 2]
+- **Member 3**: [Student Name 3]
+- **Member 4**: [Student Name 4]
 
 ---
 *Created for SRM Institute of Science and Technology - Data Science (AIML-B 2026)*
