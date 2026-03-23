@@ -153,4 +153,6 @@ cython_debug/
 
 # Project specific
 generate_dataset.py
+generate_presentation.py
+generate_report.py
 /tmp/
