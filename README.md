@@ -47,6 +47,11 @@ EduPredict/
 └── README.md              # Project documentation
 ```
 
+## Future Scope
+- **Real-time Integration**: Connecting the prediction engine with live Learning Management Systems (LMS).
+- **Mobile Application**: Developing a React Native app for students to track their own performance metrics.
+- **Deep Learning**: Implementing Neural Networks for more complex behavior pattern recognition.
+
 ## Team Members
 - **Team Leader**: [Adhi0007]
 - **Member 2**: [Student Name 2]
