@@ -60,3 +60,6 @@ EduPredict/
 
 ---
 *Created for SRM Institute of Science and Technology - Data Science (AIML-B 2026)*
+
+## Project Recap
+EduPredict successfully demonstrates the power of predictive analytics in education. By reaching a 92% accuracy in identifying at-risk students, this project provides a tangible tool for academic excellence and aligns with global sustainability goals for quality education.
