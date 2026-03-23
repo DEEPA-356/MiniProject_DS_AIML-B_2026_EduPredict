@@ -11,7 +11,11 @@ from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 def train_and_evaluate(X_train, X_test, y_train, y_test):
-    """Train multiple models and return metrics."""
+    """
+    Train multiple classification models (Random Forest, Logistic Regression, 
+    Decision Tree) and evaluate them using 5-fold cross-validation and 
+    hold-out test set performance metrics.
+    """
     models = {
         'Random Forest': RandomForestClassifier(n_estimators=100, random_state=42),
         'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),
