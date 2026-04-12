@@ -1,4 +1,4 @@
-# EduPredict: Data-Driven Prediction of Student Academic Performance
+# EduPredict: An Ensemble Machine Learning Framework for Student Performance Prediction with Explainable AI
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-2.2.1-red)
@@ -28,9 +28,27 @@ The dataset used in this project is a **synthetic dataset** generated specifical
 - **Environment**: Jupyter Notebook
 
 ## Results / Findings
-- **Model Performance**: The Random Forest classifier achieved an accuracy of ~92% (placeholder).
-- **Key Drivers**: Attendance and Internal Score 2 were found to be the most significant predictors.
-- **Insights**: Students with <75% attendance have a 60% higher probability of being labeled "At Risk".
+### Model Performance Comparison
+
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|-------|----------|-----------|--------|----------|---------|
+| Random Forest | 0.93 | 0.95 | 0.83 | 0.86 | 0.98 |
+| XGBoost | 0.94 | 0.95 | 0.84 | 0.87 | 0.99 |
+| Gradient Boosting | 0.93 | 0.94 | 0.83 | 0.86 | 0.99 |
+| Neural Network (MLP)| 0.92 | 0.82 | 0.82 | 0.82 | 0.97 |
+
+**Best Model: XGBoost**
+
+## Model Explainability
+
+### Feature Importance
+![Feature Importance](outputs/graphs/feature_importance.png)
+
+### Confusion Matrix
+![Confusion Matrix](outputs/graphs/confusion_matrix.png)
+
+### SHAP Summary Plot
+![SHAP Summary](outputs/graphs/shap_summary.png)
 
 ## Folder Structure
 ```text
@@ -41,11 +59,26 @@ EduPredict/
 ├── notebooks/             # Step-by-step Jupyter notebooks
 ├── src/                   # Modular Python scripts
 ├── outputs/
-│   ├── graphs/            # Saved visualizations
-│   └── results/           # Model weights and metrics
+│   ├── models/            # Saved best model
+│   ├── graphs/            # Saved visualizations (Feature Importance, SHAP, Confusion Matrix)
+│   └── reports/           # Metrics and explainability HTML
 ├── requirements.txt       # Dependencies
 └── README.md              # Project documentation
 ```
+
+## How to Run
+
+1. Clone the repository
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the model training pipeline
+   ```bash
+   python src/model.py
+   ```
+
+Outputs will be generated automatically inside `outputs/models/`, `outputs/graphs/`, and `outputs/reports/`.
 
 ## Future Scope
 - **Real-time Integration**: Connecting the prediction engine with live Learning Management Systems (LMS).
