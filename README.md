@@ -86,10 +86,9 @@ Outputs will be generated automatically inside `outputs/models/`, `outputs/graph
 - **Deep Learning**: Implementing Neural Networks for more complex behavior pattern recognition.
 
 ## Team Members
-- **Team Leader**: [Adhi0007]
-- **Member 2**: [Student Name 2]
-- **Member 3**: [Student Name 3]
-- **Member 4**: [Student Name 4]
+- **Member 1**: [Adhithiyan B]
+- **Member 2**: [Deepa K]
+
 
 ---
 *Created for SRM Institute of Science and Technology - Data Science (AIML-B 2026)*
