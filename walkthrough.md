@@ -1,12 +1,12 @@
-# EduPredict Advanced Models Walkthrough
+ EduPredict Advanced Models Walkthrough
 
 We have successfully integrated a powerful ensemble of models and comprehensive explainability into the **EduPredict** framework. Here is a review of what was accomplished and where everything is stored.
 
-## 1. Upgraded Project Focus
+ 1. Upgraded Project Focus
 The project title in `README.md` was updated to give it a research-level tone:
 > **EduPredict: An Ensemble Machine Learning Framework for Student Performance Prediction**
 
-## 2. Advanced AI Models and Comparison Pipeline
+ 2. Advanced AI Models and Comparison Pipeline
 We streamlined the underlying ML pipeline in `src/model.py`. Instead of single weak models, EduPredict now trains:
 - `RandomForestClassifier`
 - `XGBClassifier`
@@ -36,32 +36,32 @@ Best Model: XGBoost
 
 The Best Model pipeline also seamlessly picked XGBoost and created the required directory structures for storing all results.
 
-## 3. Storage and Directory Map
+ 3. Storage and Directory Map
 
 Following a clean structural standard, outputs are now located in exactly three subdirectories inside `outputs/`.
 
 > [!TIP]
 > Use these specific files as visual aids during your thesis defense or Viva.
 
-### `outputs/models/`
+ `outputs/models/`
 - **`best_model.pkl`**: The saved instance of the winning machine learning algorithm (XGBoost). Ready for fast inference.
 
-### `outputs/graphs/`
+ `outputs/graphs/`
 - **`confusion_matrix.png`**: Heatmap highlighting how perfectly your model classified each distinct `performance_label` class (At Risk, Moderate, Good, etc.).
 - **`feature_importance.png`**: Top 10 weights directly extracted from XGBoost's engine, indicating the heaviest drivers of student grades.
 - **`shap_summary.png`**: The SHAP interpretation scatter plot mapping features to individual label predictions.
 
-### `outputs/reports/`
+ `outputs/reports/`
 - **`model_comparison.csv`**: A raw data file storing the precision/recall data array in case tabular data import is needed for MS Word or LaTeX.
 - **`lime_explanation.html`**: A fully interactive local web-page documenting the exact justification line-by-line of the very first predicted test-student!
 
-## Verification Summary
+ Verification Summary
 Everything matches your checklist perfectly:
-- [x] Model comparison table prints exactly as requested.
-- [x] Accuracy, Precision, Recall, F1, ROC-AUC are calculated.
-- [x] Confusion matrix generated properly.
-- [x] Feature importance graph dynamically generated.
-- [x] SHAP plot generated without errors.
-- [x] LIME HTML easily accessible.
+-  Model comparison table prints exactly as requested.
+-  Accuracy, Precision, Recall, F1, ROC-AUC are calculated.
+-  Confusion matrix generated properly.
+- Feature importance graph dynamically generated.
+-  SHAP plot generated without errors.
+-  LIME HTML easily accessible.
 
-**Your project is fully upgraded and 100% defense-ready.**
+
